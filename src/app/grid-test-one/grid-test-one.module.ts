@@ -8,4 +8,4 @@ import { GridTestComponent } from './grid-test/grid-test.component';
     CommonModule
   ]
 })
-export class GridTestModule { }
+export class GridTestOneModule { }
