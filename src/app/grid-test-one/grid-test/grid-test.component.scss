@@ -1,3 +1,13 @@
+@function randomColor(){
+  $color: random(255) + ',' + random(255) + ',' + random(255);
+  @debug $color;
+  @return $color;
+}
+
+@function random255Value(){
+  @return random(255);
+}
+
 .container {
   height: 75vh;
   display: grid;
@@ -31,4 +41,11 @@
   grid-column-end: 5;
   grid-row-start: 2;
   grid-row-end: 3;
+}
+
+
+@for $u from 1 to 25 {
+  .item-#{$u} {
+    background-color: rgba(random255Value(), random255Value(), random255Value());
+  }
 }
