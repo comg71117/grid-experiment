@@ -1,1 +1,4 @@
 <p>grid-test works!</p>
+<div class="container">
+    <div  *ngFor="let item of items; index as idx" class="item item-{{idx}}">{{idx}}</div>
+</div>
